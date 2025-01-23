@@ -10,11 +10,11 @@ public class Library {
     	booklist = new ArrayList<>();
     }
 
-    public void addBook(Book book) {
+    public void addABook(Book book) {
     	booklist.add(book);
     }
 
-    public void removeBook(String ISBN) {
+    public void removeABook(String ISBN) {
         for (Book book : booklist) {
             if (book.ISBN.equals(ISBN)) {
             	booklist.remove(book);
@@ -23,7 +23,7 @@ public class Library {
         }
     }
 
-    public void showBooks() {
+    public void showBookList() {
         for (Book book : booklist) {
             System.out.println("Title: " + book.title);
             System.out.println("Author: " + book.author);

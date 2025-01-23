@@ -26,14 +26,14 @@ public class LibraryManagementSystem {
                 String ISBN = scanner.nextLine();
                 System.out.print("Enter availability: ");
                 boolean availability = scanner.nextBoolean();
-                library.addBook(new Book(title, author, ISBN, availability));
+                library.addABook(new Book(title, author, ISBN, availability));
             } else if (number == 2) {
             	scanner.nextLine();
                 System.out.print("Enter ISBN: ");
                 String ISBN = scanner.nextLine();
-                library.removeBook(ISBN);
+                library.removeABook(ISBN);
             } else if (number == 3) {
-                library.showBooks();
+                library.showBookList();
             } else if (number == 4) {
                 break;
             }
